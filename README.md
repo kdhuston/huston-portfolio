@@ -1,8 +1,8 @@
-# CodeLou_FrontEnd
+# Huston_FrontEnd
 
 ## Description
 ```
-A brief description of your project
+This is a portfolio site for my freelance writing business. It includes links to previous work, a bio, volunteerism and
 
 ```
 
