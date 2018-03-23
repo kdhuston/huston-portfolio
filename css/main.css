@@ -1,8 +1,9 @@
+
 @font-face {
     font-family: 'ostrich sans';
     src: url('../fonts/ostrichsansinline-regular-webfont.woff2') format('woff2'),
          url('../fonts/ostrichsansinline-regular-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
@@ -18,5 +19,26 @@ body {
 
 
 h1 {
+font-family:  'ostrich sans';
+font-size: 8em;
+text-align: center;
+color: #E24E42;
 
+}
+
+h2 {
+  font-family: 'ostrich sans';
+  font-size: 4em;
+  padding: none;
+}
+p {
+  font-family: 'open sans';
+  font-size: 2em;
+
+}
+
+strong {
+  font-family: 'open sans';
+  font-size: 2em;
+  color: #008f95;
 }
