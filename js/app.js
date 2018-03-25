@@ -38,7 +38,7 @@ $(document).ready(function(){
     //fade out animation with callback
     quoteContainer.fadeOut(timeAnimation, function(){
       quoteContainer.html('');
-      quoteContainer.append('<p>'+newQuoteText+'</p>'+'<p id="quoteColleague">'+'-'+newQuoteColleague+'</p>');
+quoteContainer.append('<p>'+newQuoteText+'</p>'+'<p id="quoteColleague">'+'-								'+newQuoteColleague+'</p>');
 
       //fadein animation.
       quoteContainer.fadeIn(timeAnimation);
