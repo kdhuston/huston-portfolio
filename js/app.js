@@ -19,7 +19,7 @@ $(document).ready(function(){
 ];
 
 
-  $('#quoteButton').click(function(evt){
+  $('#quoteButton').click(function(event){
     //define the targeted info containers
     var quote = $('#quoteContainer p').text();
     var quoteColleague = $('#quoteColleague').text();
@@ -32,13 +32,13 @@ $(document).ready(function(){
     for(i=0;i<=sourceLength;i+=1){
     var newQuoteText = quoteSource[randomNumber].quote;
     var newQuoteColleague = quoteSource[randomNumber].name;
-    //console.log(newQuoteText,newQuoteGenius);
+    //console.log(newQuoteText,newQuoteColleague);
     var timeAnimation = 500;
     var quoteContainer = $('#quoteContainer');
     //fade out animation with callback
     quoteContainer.fadeOut(timeAnimation, function(){
       quoteContainer.html('');
-quoteContainer.append('<p>'+newQuoteText+'</p>'+'<p id="quoteColleague">'+'-								'+newQuoteColleague+'</p>');
+    quoteContainer.append('<p>'+newQuoteText+'</p>'+'<p id="quoteColleague">'+'-'+newQuoteColleague+'</p>');
 
       //fadein animation.
       quoteContainer.fadeIn(timeAnimation);
