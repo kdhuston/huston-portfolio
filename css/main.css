@@ -36,7 +36,7 @@ h2 {
 
 p {
   font-family: 'open sans';
-  font-size: 1.5em;
+  font-size: 1em;
 
 }
 
@@ -74,7 +74,7 @@ a {
 	padding:10px;
 	margin:10px auto;
 	text-align: center;
-  height:100px;
+  height: 75%;
 }
 
 #buttonContainer{

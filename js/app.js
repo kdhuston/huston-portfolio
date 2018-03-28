@@ -16,38 +16,46 @@ $(document).ready(function(){
       quote:"Kim’s social media outreach work generated so much traffic to my website about Shaq that it crashed. More than once. Influential in Canadian basketblogger circles.",
       name:"Dan Nixon, web developer & general cool dude"
     },
+    {
+      quote:"She suffers no fools, but I'll be damned if she doesn't make people cry laughing. Working with Kim isn't work because she's hilarious, has her heart in the right place, and is dedicated to what she does. Whatever that is. She's a writer, right?",
+      name:"Erin Routson, creative director & fellow NBA podcaster"
+    },
+    {
+      quote:"Kim can write about pizza and the heart disease you'll  get from eating too much of said pizza.",
+      name:"Liz Vasquez, project manager & animal lover"
+    },
 ];
 
 
-  $('#quoteButton').click(function(event){
-    //define the targeted info containers
+  $('#quoteButton').click(function(evt){
+    //Define targeted info containers
     var quote = $('#quoteContainer p').text();
     var quoteColleague = $('#quoteColleague').text();
-    //prevent browser's default action
+    //Prevent browser default action
     evt.preventDefault();
     //getting a new random number to attach to a quote and setting a limit
     var sourceLength = quoteSource.length;
     var randomNumber= Math.floor(Math.random()*sourceLength);
-    //set a new quote
+    //Set a new quote
     for(i=0;i<=sourceLength;i+=1){
     var newQuoteText = quoteSource[randomNumber].quote;
     var newQuoteColleague = quoteSource[randomNumber].name;
     //console.log(newQuoteText,newQuoteColleague);
     var timeAnimation = 500;
     var quoteContainer = $('#quoteContainer');
-    //fade out animation with callback
+    //Fade out animation,callback
     quoteContainer.fadeOut(timeAnimation, function(){
       quoteContainer.html('');
     quoteContainer.append('<p>'+newQuoteText+'</p>'+'<p id="quoteColleague">'+'-'+newQuoteColleague+'</p>');
 
-      //fadein animation.
+      //fFade-in animation.
       quoteContainer.fadeIn(timeAnimation);
     });
 
     break;
-  };//end for loop
+  };//End for loop
 
-});//end quoteButton function
+});//End quoteButton function
 
 
-});//end document ready
+});//End document ready
