@@ -25,15 +25,13 @@ $(document).ready(function(){
       name:"Liz Vasquez, project manager & animal lover"
     },
 ];
-
-
   $('#quoteButton').click(function(evt){
     //Define targeted info containers
     var quote = $('#quoteContainer p').text();
     var quoteColleague = $('#quoteColleague').text();
     //Prevent browser default action
     evt.preventDefault();
-    //getting a new random number to attach to a quote and setting a limit
+    //getting a new random number to attach to a quote and set a limit
     var sourceLength = quoteSource.length;
     var randomNumber= Math.floor(Math.random()*sourceLength);
     //Set a new quote
