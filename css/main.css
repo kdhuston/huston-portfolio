@@ -49,6 +49,21 @@ a {
 }
 
 /* =================================
+  Styles for About Me Section
+==================================== */
+img {
+ width: 500px;
+ max-width: 100%;
+ max-height: 500px;
+ }
+
+ #Bio {
+width: 500px;
+max-width: 100%;
+justify-content: right;  
+ }
+
+/* =================================
   Base Layout Styles
 ==================================== */
 .main.nav {
