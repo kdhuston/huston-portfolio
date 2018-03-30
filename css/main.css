@@ -1,6 +1,4 @@
-/* =================================
-  Base Element Styles
-==================================== */
+/* Base Element Styles */
 @font-face {
     font-family: 'ostrich sans';
     src: url('../fonts/ostrichsansinline-regular-webfont.woff2') format('woff2'),
@@ -36,7 +34,6 @@ h2 {
 p {
   font-family: 'open sans';
   font-size: 1em;
-  align: center;
 
 }
 
@@ -47,7 +44,8 @@ strong {
 }
 
 a {
-  color: #EB6380
+  color: #008f95;
+  font-size: 1.5em;
 }
 
 img {
@@ -59,6 +57,8 @@ align-content: center;
 /* Base Layout Styles */
 .main-nav {
 	margin-top: 5px;
+  list-style: none;
+  padding:0;
 }
 
 .main-nav a {
@@ -78,7 +78,7 @@ align-content: center;
 
 .row {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 
 }
 

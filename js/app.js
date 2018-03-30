@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var quoteSource=[
   {
-      quote: "Kim was my go-to gal on staff. I could drive by her desk, spew some loosely formed notions of all the things I wanted a single 6-word headline to do and she would effortlessly reply with a clever, quick-witted zinger that would have me pulling my finger guns out of the hostler before I even had the chance to sit down. She is thoughtful in her approach, spunky in her style and a continuous student of her craft. Kim is tremendously talented. Period. P.S. Copywriters love punctuation jokes.",
+      quote: "Kim was my go-to gal on staff. I could drive by her desk, spew some loosely formed notions of all the things I wanted a single 6-word headline to do and she would effortlessly reply with a clever, quick-witted zinger that would have me pulling my finger guns out of the holster before I even had the chance to sit down. She is thoughtful in her approach, spunky in her style and a continuous student of her craft. Kim is tremendously talented. Period. P.S. Copywriters love punctuation jokes.",
       name:"Jess Dodson, graphic design guru & UX maven"
     },
     {
