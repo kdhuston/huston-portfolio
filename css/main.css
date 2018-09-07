@@ -1,0 +1,164 @@
+/* Base Element Styles */
+@font-face {
+    font-family: 'ostrich sans';
+    src: url('../fonts/ostrichsansinline-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ostrichsansinline-regular-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+body {
+  background-color: #F2EEE2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+h1 {
+font-family:  'ostrich sans';
+font-size: 6em;
+text-align: center;
+color: #E24E42;
+padding-bottom: none;
+}
+
+h2 {
+  font-family: 'ostrich sans';
+  font-size: 3em;
+  color: #EB6380;
+  text-align: center;
+}
+
+p {
+  font-family: 'open sans';
+  font-size: 1em;
+
+}
+
+strong {
+  font-family: 'open sans';
+  font-size: 2em;
+  color: #008f95;
+}
+
+a {
+	color: #008f95;
+	font-family:'open sans';
+  font-size: 1.1em;
+}
+
+img {
+align-content: center;
+
+}
+
+
+/* Base Layout Styles */
+.main-nav {
+	margin-top: 5px;
+  list-style: none;
+  padding:0;
+}
+
+.main-nav a {
+  font-family: 'ostrich sans';
+  font-size: 3em;
+  color: #008f95;
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+/* Containers */
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.column {
+    flex: 50%;
+    flex-wrap: wrap;
+
+}
+
+/* Testimonial Styles */
+
+#quoteContainer{
+  width:75%;
+	padding:10px;
+	margin:10px auto;
+	text-align: center;
+  height: 75%;
+}
+
+#buttonContainer{
+	width: 100%;
+	text-align: center;
+}
+#quoteButton{
+	width:300px;
+  margin-top: none;
+	border:0.20em solid #E24E42;
+	color:#008f95;
+	font-family: 'open sans';
+	font-weight: bold;
+  padding:0.5em;
+	text-decoration: none;
+	text-align: center;
+}
+
+#quoteButton:hover{
+	cursor:pointer;
+	background:#E24E42;
+	color: #EB6380;
+}
+#quoteButton:active{
+	cursor: pointer;
+}
+#quoteButton{
+	display: inline-block;
+}
+#quoteColleague{
+  font-size: 1em;
+	font-style: italic;
+	font-weight: 600;
+	text-align: center;
+}
+
+/*MEDIA QUERIES - Testimonial App*/
+@media screen and(max-width:760px){
+	#quoteButton,#addNew{
+		display: block;
+	}
+}
+
+/*MEDIA QUERIES - Header*/
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
